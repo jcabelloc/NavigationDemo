@@ -12,12 +12,21 @@ android:fitsSystemWindows="true">
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
         <Button
             android:id="@+id/GoSwipeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="64dp"
             android:onClick="goSwipe"
             android:text="Go Swipe" />
 
